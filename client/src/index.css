@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply font-sans;
+    @apply bg-black;
+    @apply text-white;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+}
+
+@theme {
+  --color-main: #FFF200;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-gray: #D9EDFE;
+  --color-dark: #0D0D0D;
+  --color-black-5: #0000000D;
+  --color-transparent: transparent;
+}
+
+@utility bg-card-overlay {
+  background: linear-gradient(
+    0deg,
+    rgb(20, 20, 20) 0%,
+    rgb(0, 0, 0) 48.808329814189186%
+  );
+}
